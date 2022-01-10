@@ -10,7 +10,7 @@
 
 ### Clone
 
-- Clone this repo to your local machine using `https://github.com/dennisagarwal/express-application.git`
+- Clone this repo to your local machine using `https://github.com/dennisagarwal/expense-application.git`
 
 ### Setup
 
