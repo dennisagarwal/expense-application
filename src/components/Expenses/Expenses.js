@@ -21,14 +21,16 @@ const filteredExpenses = props.items.filter((expense)=>{
 
   return (
     <div>
+       <li>
+    <Card className="expenses">
       <ExpensesFilter
         selected={filteredYear}
         onChangeFilter={filteredChangeHandler}
       ></ExpensesFilter>
       <ExpensesChart expense={filteredExpenses}></ExpensesChart>
       <ExpensesList items={filteredExpenses}></ExpensesList>
-      <li>
-      <Card className="expenses">
+
+
 {/* filtered expense with conditional statement */}
 
 {/* Alternate trick for if statement with && operator*/}
