@@ -43,6 +43,7 @@ setEnteredAmount("")
 console.log(expenseData)
 }
 
+
   return (
     <form onSubmit={submitHandler}>
       <div className="new-expense__control">
@@ -58,7 +59,8 @@ console.log(expenseData)
         <label>Date</label>
           <input type='date' min='2019-01-01' value={enteredDate} max='2022-12-31' onChange={handleDateChange}/>
         </div>
-        <button type="submit">Add Expense</button>
+        <button onClick={props.onCancel} type="button">Cancel</button>
+        <button  type="submit">Add Expense</button>
       </div>
     </form>
   );

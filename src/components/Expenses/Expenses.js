@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import ExpenseItem from "../ExpenseItem/ExpenseItem";
+// import ExpenseItem from "../ExpenseItem/ExpenseItem";
 import "./Expenses.css";
 import Card from "../Card/Card";
 import ExpensesFilter from "../ExpensesFilter/ExpensesFilter";
 import ExpensesList from "../ExpensesList/ExpensesList";
-
+import ExpensesChart from "../ExpensesChart/ExpensesChart";
 function Expenses(props) {
   const [filteredYear, setFilteredYear] = useState("2020");
 
@@ -25,9 +25,10 @@ const filteredExpenses = props.items.filter((expense)=>{
         selected={filteredYear}
         onChangeFilter={filteredChangeHandler}
       ></ExpensesFilter>
+      <ExpensesChart expense={filteredExpenses}></ExpensesChart>
+      <ExpensesList items={filteredExpenses}></ExpensesList>
       <li>
       <Card className="expenses">
-        <h2>Let's get started!</h2>
 {/* filtered expense with conditional statement */}
 
 {/* Alternate trick for if statement with && operator*/}
@@ -49,7 +50,7 @@ const filteredExpenses = props.items.filter((expense)=>{
           ></ExpenseItem>
         )))} */}
 
-<ExpensesList items={filteredExpenses}></ExpensesList>
+{/* <ExpensesList items={filteredExpenses}></ExpensesList> */}
         {/* filtering the items */}
 
         {/* {filteredExpenses.map((expense) => (

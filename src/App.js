@@ -6,25 +6,25 @@ const DUMMY_EXPENSE = [
   {
     id:"e1",
     title: "a",
-    amount: "b",
+    amount: "8",
     date: new Date(2021, 2, 28),
   },
   {
     id:"e2",
     title: "a",
-    amount: "b",
+    amount: "12",
     date: new Date(2021, 2, 28),
   },
   {
     id:"e3",
     title: "a",
-    amount: "b",
+    amount: "22",
     date: new Date(2021, 2, 28),
   },
   {
     id:"e4",
     title: "a",
-    amount: "b",
+    amount: "20",
     date: new Date(2021, 2, 28),
   },
 ];
