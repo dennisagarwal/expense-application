@@ -37,11 +37,11 @@ $ npm start
 
 #### Website Glimpse
 
- **1.** Login Page
+ **1.** Landing Page
 
  ![](images/landing-page.JPG)
 
-  **2.** SignUp Page
+  **2.** Landing Page with form
 
  ![](images/landing-page-form.JPG)
 
